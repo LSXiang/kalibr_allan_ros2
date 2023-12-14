@@ -1,34 +1,26 @@
-<package>
-
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>bagconvert</name>
-  <version>1.0.0</version>
-  <description>
-  This package provides dataset parsing of rosbags to matlab format.
-  </description>
-  <maintainer email="pgeneva@udel.edu">Patrick Geneva</maintainer>
-  <author>Patrick Geneva</author>
-
-  <!-- Licensing -->
+  <version>0.0.0</version>
+  <description>This package provides dataset parsing of rosbags to matlab format.</description>
+  <maintainer email="add-nuc-gpu@todo.todo">add-nuc-gpu</maintainer>
   <license>MIT</license>
 
-  <!-- Dependencies which this package needs to build itself. -->
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <!-- Dependencies needed to compile this package. -->
-  <build_depend>cmake_modules</build_depend> <!-- for FindEigen.cmake -->
-  <build_depend>roscpp</build_depend>
-  <build_depend>std_msgs</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-  <build_depend>nav_msgs</build_depend>
-  <build_depend>rosbag</build_depend>
+  <depend>rclcpp</depend>
+  <depend>rcpputils</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>rosbag2_cpp</depend>
 
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
-  <!-- Dependencies needed after this package is compiled. -->
-  <run_depend>roscpp</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>sensor_msgs</run_depend>
-  <run_depend>nav_msgs</run_depend>
-  <run_depend>rosbag</run_depend>
-
-
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
+
