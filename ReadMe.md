@@ -1,4 +1,44 @@
-# kalibr_allan
+# kalibr_allan_ros2
+
+This is a ROS2 version of kalibr_allan.
+
+### Prerequisites
+
+- **System**
+
+  - Ubuntu 22.04
+
+  - ROS2 humble
+
+- **Libraries**
+
+  - boost
+  - Eigen
+  - matlab
+
+### build
+
+```shell
+cd ${PATH_TO_YOUR_ROS2_WS}/src
+git clone https://github.com/LSXiang/kalibr_allan_ros2.git
+cd ..
+source /opt/ros/$ROS_DISTRO/setup.bash
+colcon build --symlink-install && source ./install/local_setup.bash
+```
+
+### Convert the ROS bag into a matlab mat file
+
+- Example: `ros2 run bagconvert bagconvert imu.bag /imu0`
+
+
+
+
+
+
+
+---
+
+## Original Readme
 
 This has some nice utility scripts and packages that allow for calculation of the noise values for use in both [kalibr](https://github.com/ethz-asl/kalibr) and IMU filters.
 The dataset of the manufacture can find the "white noise" values for the system, but the bias noises need to be found through experimental tests.
@@ -39,16 +79,15 @@ Accelerometer "random walk" | `accelerometer_random_walk` | <img src="https://la
     * ASL-ETH VI-Sensor
 
 ### Example Plot - XSENS MTI-G-700
-![allan chart acceleration](data/results_20170908T182715_accel.png)
+<img src="docs/examples_result/results_20170908T182715_accel.png" alt="allan chart acceleration" style="zoom: 15%;" /> <img src="docs/examples_result/results_20170908T182715_gyro.png" alt="allan chart angular velocity" style="zoom:15%;" /> 
 
-![allan chart angular velocity](data/results_20170908T182715_gyro.png)
+
 
 ### Example Plot - Tango Yellowstone Tablet
-![allan chart acceleration](data/results_20171031T115123_accel.png)
+<img src="docs/examples_result/results_20171031T115123_accel.png" alt="allan chart acceleration" style="zoom:15%;" /> <img src="docs/examples_result/results_20171031T115123_gyro.png" alt="allan chart angular velocity" style="zoom:15%;" /> 
 
-![allan chart angular velocity](data/results_20171031T115123_gyro.png)
+
 
 ### Example Plot - ASL-ETH VI-Sensor
-![allan chart acceleration](data/results_20180206T140217_accel.png)
+<img src="docs/examples_result/results_20180206T140217_accel.png" alt="allan chart acceleration" style="zoom:15%;" /> <img src="docs/examples_result/results_20180206T140217_gyro.png" alt="allan chart angular velocity" style="zoom:15%;" />
 
-![allan chart angular velocity](data/results_20180206T140217_gyro.png)
