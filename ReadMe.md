@@ -78,15 +78,15 @@ Accelerometer "random walk" | `accelerometer_random_walk` | <img src="https://la
 
 #### Example Plot - XSENS MTI-G-700
 
-<img src="docs/examples_result/results_20170908T182715_accel.png" alt="allan chart acceleration" width = 40% height = 40% div align=left />  <img src="docs/examples_result/results_20170908T182715_gyro.png" alt="allan chart angular velocity" width = 40% height = 40% div align= cencer /> 
+<img src="docs/examples_result/results_20170908T182715_accel.png" alt="allan chart acceleration" width = 50% height = 50% div align=left /><img src="docs/examples_result/results_20170908T182715_gyro.png" alt="allan chart angular velocity" width = 50% height = 50% div align= cencer /> 
 
 
 #### Example Plot - Tango Yellowstone Tablet
 
-<img src="docs/examples_result/results_20171031T115123_accel.png" alt="allan chart acceleration" width = 40% height = 40% div align=left /> <img src="docs/examples_result/results_20171031T115123_gyro.png" alt="allan chart angular velocity" width = 40% height = 40% div align= cencer /> 
+<img src="docs/examples_result/results_20171031T115123_accel.png" alt="allan chart acceleration" width = 50% height = 50% div align=left /><img src="docs/examples_result/results_20171031T115123_gyro.png" alt="allan chart angular velocity" width = 50% height = 50% div align= cencer /> 
 
 
 #### Example Plot - ASL-ETH VI-Sensor
 
-<img src="docs/examples_result/results_20180206T140217_accel.png" alt="allan chart acceleration" width = 40% height = 40% div align=left  /> <img src="docs/examples_result/results_20180206T140217_gyro.png" alt="allan chart angular velocity" width = 40% height = 40% div align= cencer />
+<img src="docs/examples_result/results_20180206T140217_accel.png" alt="allan chart acceleration" width = 50% height = 50% div align=left  /><img src="docs/examples_result/results_20180206T140217_gyro.png" alt="allan chart angular velocity" width = 50% height = 50% div align= cencer />
 
