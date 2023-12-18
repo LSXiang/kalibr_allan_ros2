@@ -9,12 +9,11 @@
 #include <mat.h>
 
 int main(int argc, char **argv) {
-
   // Debug message
   RCLCPP_INFO(rclcpp::get_logger(__func__), "Starting up");
 
   // Check if there is a path to a dataset
-  if(argc < 3) {
+  if (argc < 3) {
     RCLCPP_ERROR(
         rclcpp::get_logger(__func__), "Error please specify a rosbag file");
     RCLCPP_ERROR(

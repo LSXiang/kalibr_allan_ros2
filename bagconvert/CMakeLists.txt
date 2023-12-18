@@ -3,6 +3,13 @@ cmake_minimum_required(VERSION 3.5)
 # Project name
 project(bagconvert)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_BUILD_TYPE Release)
+# Enable compile optimizations
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -O3")
+# Enable debug flags (use if you want to debug in gdb)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3  -Wall")
+
 # Include libraries
 find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system filesystem thread date_time)
@@ -21,14 +28,6 @@ find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(rosbag2_cpp REQUIRED)
-
-set(CMAKE_CXX_STANDARD 17)
-
-# Enable compile optimizations
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -O3")
-
-# Enable debug flags (use if you want to debug in gdb)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3  -Wall")
 
 # Include our header files
 include_directories(
