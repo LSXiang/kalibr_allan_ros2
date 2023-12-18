@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
   if (pmat == nullptr) {
     RCLCPP_ERROR(rclcpp::get_logger(__func__),
                  "Error could not create the mat file");
-    return(EXIT_FAILURE);
+    return EXIT_FAILURE;
   }
 
   // Our data vector
@@ -80,7 +80,13 @@ int main(int argc, char **argv) {
       dataIMU.push_back(imu_msg->angular_velocity.y);
       dataIMU.push_back(imu_msg->angular_velocity.z);
     }
+  }
+  bag_reader.close();
 
+  if (dataIMU.empty()) {
+    RCLCPP_ERROR(rclcpp::get_logger(__func__),
+                 "The imu data is empty, check your input bag & topic.\n");
+    return EXIT_FAILURE;
   }
 
   // Debug message
