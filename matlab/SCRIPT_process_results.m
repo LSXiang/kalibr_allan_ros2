@@ -7,14 +7,9 @@ addpath('functions')
 addpath('functions/allan_v3')
 
 % Our bag information
-%titlestr = 'XSENS MTi-G-710';
-%mat_path = '../data/bags/results_20170908T182715.mat';
+titlestr = 'Bosch BMI055 Release D455';
+mat_path = '~/Dataset/realsense_d455/imu_allan_calib/results_20231218T182747.mat';
 
-%titlestr = 'Tango Yellowstone #1';
-%mat_path = '../data/bags/results_20171031T115123.mat';
-
-titlestr = 'ADIS16448 VI-Sensor';
-mat_path = '../data/bags/results_20180206T140217.mat';
 
 % Load the mat file (should load "data_imu" matrix)
 fprintf('=> opening the mat file.\n')
