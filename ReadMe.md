@@ -32,9 +32,7 @@ colcon build --symlink-install && source ./install/local_setup.bash
 
 
 
-
-
-
+<br><br><br>
 
 ---
 
@@ -46,7 +44,7 @@ The `gyroscope_random_walk` and `accelerometer_random_walk` values can normally 
 
 
 
-## IMU Noise Values
+### IMU Noise Values
 
 Parameter | YAML element | Symbol | Units
 --- | --- | --- | ---
@@ -58,7 +56,7 @@ Accelerometer "random walk" | `accelerometer_random_walk` | <img src="https://la
 
 
 
-## Experiment Steps
+### Experiment Steps
 
 1. With the IMU remaining still, record a ROS bag of the readings (we collected a bag for about 4 hours)
 2. Convert the ROS bag into a matlab mat file.
@@ -78,16 +76,17 @@ Accelerometer "random walk" | `accelerometer_random_walk` | <img src="https://la
     * Tango Yellowstone Tablet
     * ASL-ETH VI-Sensor
 
-### Example Plot - XSENS MTI-G-700
-<img src="docs/examples_result/results_20170908T182715_accel.png" alt="allan chart acceleration" style="zoom: 15%;" /> <img src="docs/examples_result/results_20170908T182715_gyro.png" alt="allan chart angular velocity" style="zoom:15%;" /> 
+#### Example Plot - XSENS MTI-G-700
+
+<img src="docs/examples_result/results_20170908T182715_accel.png" alt="allan chart acceleration" style="zoom: 15%;"  div align=left />  <img src="docs/examples_result/results_20170908T182715_gyro.png" alt="allan chart angular velocity" style="zoom:15%;" div align= cencer /> 
 
 
+#### Example Plot - Tango Yellowstone Tablet
 
-### Example Plot - Tango Yellowstone Tablet
-<img src="docs/examples_result/results_20171031T115123_accel.png" alt="allan chart acceleration" style="zoom:15%;" /> <img src="docs/examples_result/results_20171031T115123_gyro.png" alt="allan chart angular velocity" style="zoom:15%;" /> 
+<img src="docs/examples_result/results_20171031T115123_accel.png" alt="allan chart acceleration" style="zoom:15%;"  div align=left /> <img src="docs/examples_result/results_20171031T115123_gyro.png" alt="allan chart angular velocity" style="zoom:15%;"  div align= cencer /> 
 
 
+#### Example Plot - ASL-ETH VI-Sensor
 
-### Example Plot - ASL-ETH VI-Sensor
-<img src="docs/examples_result/results_20180206T140217_accel.png" alt="allan chart acceleration" style="zoom:15%;" /> <img src="docs/examples_result/results_20180206T140217_gyro.png" alt="allan chart angular velocity" style="zoom:15%;" />
+<img src="docs/examples_result/results_20180206T140217_accel.png" alt="allan chart acceleration" style="zoom:15%;" div align=left  /> <img src="docs/examples_result/results_20180206T140217_gyro.png" alt="allan chart angular velocity" style="zoom:15%;"  div align= cencer />
 
