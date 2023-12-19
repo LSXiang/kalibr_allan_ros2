@@ -12,11 +12,11 @@ This is a ROS2 version of kalibr_allan.
 
 - **Libraries**
 
-  - boost
+  - Boost
   - Eigen
-  - matlab
+  - Matlab
 
-### build
+### Build
 
 ```shell
 cd ${PATH_TO_YOUR_ROS2_WS}/src
@@ -30,6 +30,9 @@ colcon build --symlink-install && source ./install/local_setup.bash
 
 - Example: `ros2 run bagconvert bagconvert imu.bag /imu0`
 
+### Example Plot - RealSense-D455 
+
+<img src="docs/examples_result/results_20231218T182747_accel.png" alt="allan chart acceleration" width = 45% height = 45% div align=left /><img src="docs/examples_result/results_20231218T182747_gyro.png" alt="allan chart angular velocity" width = 46.5% height = 46.5% div align= cencer />
 
 
 <br><br>
