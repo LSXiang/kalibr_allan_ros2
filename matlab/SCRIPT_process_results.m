@@ -7,7 +7,7 @@ addpath('functions')
 addpath('functions/allan_v3')
 
 % Our bag information
-titlestr = 'Bosch BMI055 Release D455';
+titlestr = 'RealSense-D455 Bosch BMI055';
 mat_path = '~/Dataset/realsense_d455/imu_allan_calib/results_20231218T182747.mat';
 
 
