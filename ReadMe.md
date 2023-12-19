@@ -1,6 +1,6 @@
 # kalibr_allan_ros2
 
-This is a ROS2 version of kalibr_allan.
+This is a ROS2 version of [kalibr_allan](https://github.com/rpng/kalibr_allan).
 
 ### Prerequisites
 
